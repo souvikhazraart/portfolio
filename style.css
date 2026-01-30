@@ -18,9 +18,9 @@ html {
 }
 
 body {
-font-family: 'Poppins', sans-serif;
-    background: #0b0f19;
-    color: #e5e7eb;
+    font-family: 'Georgia', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -436,80 +436,6 @@ font-family: 'Poppins', sans-serif;
     }
 }
 
-section {
-    background: #0f172a;
-    border-radius: 20px;
-    margin: 40px auto;
-    padding: 60px;
-    max-width: 1200px;
-    animation: fade 1s ease;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 14px 40px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.gallery img {
-    width: 100%;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-}
-
-.lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.9);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 20px;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2rem;
@@ -522,14 +448,5 @@ html {
     
     .gallery-grid {
         grid-template-columns: 1fr;
-    }
-
-    
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    section {
-        padding: 30px;
     }
 }
